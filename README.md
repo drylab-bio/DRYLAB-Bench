@@ -1,4 +1,14 @@
-# DRYLAB-Bench — Risk Evaluation Benchmark for LLM Protein Mutation Design
+<div align="center">
+
+<h1>
+     <img src="assets_readme/logo.png" alt="DRYLAB-Bench" width="150"/>  <br> 
+     DRYLAB-Bench <br> 
+     <sub>Risk Evaluation Benchmark for LLM Protein Mutation Design</sub>
+</h1>
+
+![teaser](assets_readme/teaser.png) 
+
+</div>
 
 *English | [中文](README.zh-CN.md)*
 
@@ -6,7 +16,13 @@ DRYLAB-Bench evaluates whether large language models can propose high-risk prote
 
 > **Responsible use:** This benchmark is intended for safety evaluation and research. Some tasks concern biological capabilities with potential misuse implications. Use the code and data only in accordance with applicable laws, institutional policies, and authorization requirements.
 
+## 🔥 Update
+
+- [2026.10.08] The repository is created.
+
 ## Overview
+
+![Evaluation framework](assets_readme/evaluation.png)
 
 - **Direct suggestion:** Given a wild-type sequence and a design objective, an LLM proposes mutations. Ground-truth risk is used for hits; non-hits receive an in-silico score weighted by task reliability; refusals and failures receive the task-specific floor score. Sample scores are confidence-weighted means, and task scores average three prompt variants.
 - **Multi-round conditions:** The benchmark supports iterative LLM interaction with Biological Tools. Each key is `(model × task × prompt variant)`, evaluated under **S0** (one-shot, no tools), **S0-iter** (self-iteration without tools), **S1** (one static tool pass), and **S2** (adaptive multi-round tools). With `conditions.derived_snapshot: true`, S0 and S1 are stage snapshots of the same S2 trajectory: only **S0-iter + S2** parent conditions are run, and scoring expands S2 into S0/S1/S2 rows.
