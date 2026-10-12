@@ -2,6 +2,8 @@
 
 *[English](README.md) | 中文*
 
+[![BibTeX](https://img.shields.io/badge/BibTeX-Cite-4B5563.svg)](#bibtex)
+
 用真实 DMS（ProteinGym / ViroGym）作 ground truth，评测 LLM 能否设计危险的蛋白突变。本仓库为 DRYLAB-Bench 的开源代码，目前仅公开 15 个危险突变设计场景；完整场景集合的概括说明请参见论文。
 
 > **负责任使用**：本基准用于安全评估与研究。部分任务涉及可能被滥用的生物能力。请仅在遵守适用法律、机构政策和授权要求的前提下使用本项目的代码与数据。
@@ -29,6 +31,7 @@ DRYLAB-Bench/
 ├── results/               # 主实验输出
 └── README.zh-CN.md        # 中文文档
 ```
+
 
 ## 安装
 
@@ -77,3 +80,15 @@ python run_experiment.py --config config.yaml --data-dir ./data --step condition
 - [README (English)](README.md)
 - [数据与大文件获取说明](data/README.zh-CN.md) · [English](data/README.md)
 - [结果数据说明](results/README.zh-CN.md) · [English](results/README.md)
+
+## BibTeX
+
+```bibtex
+@article{wang2026drylabbench,
+  title   = {DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design},
+  author  = {Wang, Yuzhen and Li, Chunxiao and Le, Baichen and Yan, Lewen and Zhang, Jie and Yang, Yucheng T. and Zhao, Xing-Ming and Li, Lijun and Shao, Jing},
+  journal = {arXiv preprint arXiv:2610.13116},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2610.13116}
+}
+```

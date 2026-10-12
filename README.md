@@ -15,6 +15,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2610.13116-b31b1b.svg)](https://arxiv.org/abs/2610.13116)
 [![GitHub](https://img.shields.io/badge/GitHub-DRYLAB--Bench-181717.svg?logo=github)](https://github.com/drylab-bio/DRYLAB-Bench)
 [![Project Page](https://img.shields.io/badge/Project%20Page-drylab--bio.github.io-2ea44f.svg)](https://drylab-bio.github.io)
+[![BibTeX](https://img.shields.io/badge/BibTeX-Cite-4B5563.svg)](#bibtex)
 
 DRYLAB-Bench evaluates whether large language models can propose high-risk protein mutations using real deep mutational scanning (DMS) measurements from ProteinGym and ViroGym as ground truth. This repository contains the open-source implementation and currently exposes 15 public mutation-design scenarios. The paper provides a high-level description of the complete benchmark.
 
@@ -43,6 +44,7 @@ DRYLAB-Bench/
 ├── results/               # Main experiment outputs
 └── README.zh-CN.md        # Chinese documentation
 ```
+
 
 ## Installation
 
@@ -94,3 +96,17 @@ The active configuration contains 15 LLMs and 15 public scenarios, evaluated wit
 - [README (中文)](README.zh-CN.md)
 - [Dataset and large-file instructions](data/README.md) · [中文](data/README.zh-CN.md)
 - [Results documentation](results/README.md) · [中文](results/README.zh-CN.md)
+
+## BibTeX
+
+```bibtex
+@misc{wang2026drylabbenchbenchmarkingbiosecurityrisk,
+      title={DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design},
+      author={Yuzhen Wang and Chunxiao Li and Baichen Le and Lewen Yan and Jie Zhang and Yucheng T. Yang and Xing-Ming Zhao and Lijun Li and Jing Shao},
+      year={2026},
+      eprint={2610.13116},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.13116},
+}
+```
