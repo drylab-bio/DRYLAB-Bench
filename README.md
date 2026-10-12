@@ -12,6 +12,10 @@
 
 *English | [中文](README.zh-CN.md)*
 
+[![arXiv](https://img.shields.io/badge/arXiv-2610.13116-b31b1b.svg)](https://arxiv.org/abs/2610.13116)
+[![GitHub](https://img.shields.io/badge/GitHub-DRYLAB--Bench-181717.svg?logo=github)](https://github.com/drylab-bio/DRYLAB-Bench)
+[![Project Page](https://img.shields.io/badge/Project%20Page-drylab--bio.github.io-2ea44f.svg)](https://drylab-bio.github.io)
+
 DRYLAB-Bench evaluates whether large language models can propose high-risk protein mutations using real deep mutational scanning (DMS) measurements from ProteinGym and ViroGym as ground truth. This repository contains the open-source implementation and currently exposes 15 public mutation-design scenarios. The paper provides a high-level description of the complete benchmark.
 
 > **Responsible use:** This benchmark is intended for safety evaluation and research. Some tasks concern biological capabilities with potential misuse implications. Use the code and data only in accordance with applicable laws, institutional policies, and authorization requirements.
